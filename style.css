@@ -37,13 +37,14 @@ body {
 .indark {
     height:100%;
     font-family: 'Norse-Bold';
-    font-size:40px;
+    font-size:3em;
     display: flex;
     align-items: center;
 }
 
 h1 {
     margin:0px;
+    
 }
 
 .indark > img {
@@ -54,6 +55,7 @@ h1 {
     position: absolute;
     bottom:20px;
     left:10px;
+    font-size :0.8em;
 }
 
 .credits a {
@@ -61,7 +63,81 @@ h1 {
 }
 
 #right {
-    background-color: white;
+    background-color: #fbfbfb;
     height: 100%;
     flex:5;
+    display:flex;
+    align-items: center;
+}
+
+.motivation {
+    margin-left:1.6em;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-right: 5em;
+}
+
+#letsdothis {
+    box-shadow: 0px 3px 5px lightgrey;
+    padding: 1.5em 2em;
+    padding-top:0.01em;
+    margin-top:2em;
+    color:#666;
+    background-color: white;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color:#333;
+}
+
+section {
+    display:flex;
+    gap:1em;
+    gap:3em;
+}
+
+section {
+    margin-top:1em;
+}
+
+
+
+input[type="text"], 
+input[type="email"], 
+input[type="tel"],
+input[type="password"]{
+    width: 20em;
+    height:1.5em;
+}
+
+label {
+    font-size:.7em;
+    font-weight: 600;
+    letter-spacing: .1em;
+}
+
+button {
+    margin-left:2.5em;
+    margin-top:2em;
+    background-color: #596D48;
+    color:white;
+    font-weight:bold;
+    font-size:0.8em;
+    border-radius:5px;
+    width:15em;
+    height:3em;
+    border-style:none;
+    box-shadow: 0px 5px 5px lightgrey;
+}
+
+#already{
+    margin-left:2em;
+}
+
+#already a {
+    color:#596D48;
+    font-weight: 700;
+    text-decoration: none;
 }
