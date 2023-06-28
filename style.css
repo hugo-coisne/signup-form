@@ -124,7 +124,11 @@ input:focus {
     border-width: 1px;
 }
 
-
+.error {
+    color:red;
+    margin:0px;
+    font-size:.7em;
+}
 
 label {
   font-size: 0.7em;

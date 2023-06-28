@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup form</title>
     <link rel="stylesheet" href="style.css" />
-    <script scr="script.js" defer></script>
+    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -41,7 +41,7 @@
         <p class="motivation">You <em>know</em> you want to.</p>
         <div id="letsdothis">
           <h2>Let's do this!</h2>
-          <form method="post" id="signup">
+          <form method="post" id="signup" action="">
             <section id="names">
               <legend hidden>Names</legend>
               <div class="left">
@@ -72,8 +72,8 @@
                   type="email"
                   name="user_email"
                   id="email"
-                  pattern="/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/"
                 />
+                <p id="noemail" class="error" hidden>* invalid email</p>
               </div>
               <div class="right">
                 <label for="phone">PHONE NUMBER</label><br />
@@ -83,9 +83,10 @@
                   name="user_phonenumber"
                   id="phone"
                 />
+                <p id="nophone" class="error" hidden>* invalid phone number</p>
               </div>
             </section>
-            <section id="pwd">
+            <section id="paswword">
               <legend hidden>password</legend>
               <div class="left">
                 <label for="pwd">PASSWORD</label><br />
@@ -94,8 +95,8 @@
                   type="password"
                   name="user_pwd"
                   id="pwd"
-                  class="error"
                 />
+                <p id="nomatch" class="error" hidden>* Passwords do not match</p>
               </div>
               <div class="right">
                 <label for="pwd-confirm">CONFIRM PASSWORD</label><br />
@@ -104,7 +105,6 @@
                   type="password"
                   name="confirm_pwd"
                   id="pwd-confirm"
-                  class="error"
                 />
               </div>
             </section>
